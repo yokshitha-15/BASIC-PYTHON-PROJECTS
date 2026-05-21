@@ -1,0 +1,3 @@
+usd = float(input("USD: "))
+inr = usd * 83
+print("INR: ",inr)
