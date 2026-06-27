@@ -1,0 +1,18 @@
+songs = [
+    "Aaya sher",
+    "Chikri",
+    "Boom Boom",
+    "Inka edho"]
+liked= [True, True, False, True, False]
+fav_playlist = []
+for i, song in enumerate(songs):
+    if not liked[i]:
+        print(f"Skipping: {songs}")
+        continue
+    fav_playlist.append(song)
+    print(f"Added: {song}")
+print(f"Favourite playlist {len(fav_playlist)} songs")
+repeat = int(input("How many times to repeat the song"))
+for song in fav_playlist:
+    for i in range(1,repeat + 1):
+        print(f"Round {i}: Playing {song}")
